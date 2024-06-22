@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Few-shot Learning from Meta-Learning, Statistical Understanding to Applications">
+    <meta name="author" content="">
+
+    <title>(ICML 24 tutorial) Mixture-of-Experts in the Era of LLMs: A New Odyssey</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+
+    <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/image.css" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!-- FullScreen -->
+<div class="intro-header">
+    <div class="col-xs-12 text-center abcen1">
+        <div style="background-color: rgba(0,0,0,0.5)">
+            <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="text-shadow: 0 0 8px #000000;">
+                Mixture-of-Experts in the Era of LLMs: A New Odyssey</h1>
+
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black">
+                Mon 22 Jul 1 p.m. CEST — 3 p.m. CEST </p>
+                Location: Hall A1 </p>
+            </h3>
+            <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s" style="text-shadow: 0px 8px 4px black, 0 0 25px black">
+                <a style="color:white" href="https://icml.cc" target="_blank"><b>ICML 2024</b></a> tutorial </p>
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="menuItem"><a href="#scope">Home</a></li>
+                <li class="menuItem"><a href="#program">Program</a></li>
+                <li class="menuItem"><a href="#organizers">Organizers</a></li>
+                <li class="menuItem"><a href="#students">Students</a></li>
+                <li class="menuItem"><a href="#contacts">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Scope -->
+<div id="scope" class="content-section-a" style="border-top: 0">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="wow fadeInRightBig" data-animation-delay="200">
+                <h3 class="section-heading">ICML 2024 Tutorial on "Mixture-of-Experts in the Era of LLMs: A New
+                    Odyssey"</h3>
+                <p class="lead" style="text-align:justify">
+                    Recently, Large Language Models (LLMs) have showcased remarkable generalization capabilities across
+                    a plethora of tasks, yielding notable successes. The scale of these models stands out as a pivotal
+                    determinant in enhancing LLM performance. However, the escalation in model size significantly
+                    amplifies the costs associated with both pre-training and fine-tuning, while simultaneously
+                    constraining inference speed. Consequently, there has been a surge in exploration aimed at devising
+                    novel techniques for model scaling. Among these, the sparse Mixture-of-Experts (MoE) has garnered
+                    considerable attention due to its ability to expedite pre-training and enhance inference speed,
+                    especially when compared to dense models with equivalent parameter counts.
+                    <br>
+                    <br>
+                    This tutorial endeavors
+                    to offer a comprehensive overview of MoE within the context of LLMs. The discussion commences by
+                    revisiting extant research on MoE, elucidating critical challenges encountered within this domain.
+                    Subsequent exploration delves into the intricate relationship between MoE and LLMs, encompassing
+                    sparse scaling of pre-training models and the conversion of existing dense models into sparse MoE
+                    counterparts. Moreover, the tutorial elucidates the broader advantages conferred by MoE beyond mere
+                    efficiency.
+                    <br>
+                    <br>
+                    Overall, this tutorial delineates the evolutionary trajectory of MoE within the
+                    landscape of LLMs, underscoring its pivotal role in the era of LLMs.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</div>
+
+<!-- Program -->
+<div id="program" class="content-section-a">
+
+    <div class="container">
+        <div class="wow fadeInLeftBig" data-animation-delay="200">
+            <h3 class="section-heading">Program (CEST PM)</h3>
+
+        </div>
+
+        <table class="table" style="width:100%">
+            <tr class="info">
+                <td><strong>Sessions
+                </strong></td>
+                <td>Title</td>
+                <!-- <td>Video</td> -->
+                <!-- <td>Slides</td> -->
+                <td>Speakers</td>
+            </tr>
+            <tr>
+                <td>1:00-1:35</td>
+                <td><strong>Overview & Key Challenges in MoEs and their Crucial Roles in LLMs &emsp; &emsp;
+                </strong></td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td>Tianlong Chen</td>
+            </tr>
+
+            <tr class="success">
+                <td>1:35-2:10</td>
+                <td><strong>Building MoE from Dense LLMs and MoE Beyond Efficiency</strong> &emsp;
+                </td>
+                <td>Yu Cheng</td>
+            </tr>
+
+            <tr>
+                <td>2:10-2:25</td>
+                <td><strong>How to Train a Superior MoE from a System View? </strong>
+                </td>
+                <td>Minjia Zhang</td>
+            </tr>
+
+            <tr class="success">
+                <td>2:25-3:00</td>
+                <td><strong>Panel (moderated by Tianlong Chen)</strong>
+                </td>
+                <td>Yu Cheng, Beidi Chen, Minjia Zhang, Mohit Bansal</td>
+            </tr>
+        </table>
+
+
+        </table>
+
+        <div class="container">
+            <div class="wow fadeInRightBig" data-animation-delay="200">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Organizers -->
+<div id="organizers" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Organizers</h3>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="145" width="145"
+                             src="img/organizer/tianlong.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://tianlong-chen.github.io/">Tianlong Chen</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/yu.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://ych133.github.io/">Yu Cheng</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Chinese University of Hong Kong</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/beidi.jpeg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://www.andrew.cmu.edu/user/beidic/">Beidi Chen</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>Carnegie Mellon University</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/minjia.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://minjiazhang.github.io/">Minjia Zhang</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>University of Illinois Urbana-Champaign</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/mohit.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Organizers -->
+<div id="students" class="content-section-a">
+
+    <div class="container">
+        <div class="row wow fadeInRightBig" data-animation-delay="200">
+            <h3 class="section-heading">Assistant Students</h3>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/pingzhi.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://pingzhili.github.io/">Pingzhi Li</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="150" width="150"
+                             src="img/organizer/xinyu.jpg" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://zhaocinyu.github.io/">Xinyu Zhao</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+
+            <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+                <center><img class="img-responsive img-rounded" style="border-radius: 50%" height="143" width="143"
+                             src="img/organizer/mufan.png" alt=""></center>
+                <h4 class="section-heading">
+                    <center><a href="https://mufan.me/">Mufan Qiu</a></center>
+                </h4>
+                <h5 class="section-heading">
+                    <center><i>The University of North Carolina at Chapel Hill</i></center>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="contacts" class="content-section-c ">
+    <!-- Contacts -->
+    <div class="container">
+        <div class="row">
+
+            <!--div class="col-sm-6 pull-right wow fadeInRightBig">
+                <img class="img-responsive " src="img/ipad.png" alt="">
+            </div-->
+
+            <div class="wow fadeInLeftBig" data-animation-delay="200">
+                <h3 class="section-heading" style="color:white">Contacts</h3>
+                <!--div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div-->
+                <p class="lead" style="text-align:left;color:white">
+                    Contact the Organizing Committee: tianlong@cs.unc.edu
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div>
+                    <div class="morph-button ">
+                        <button type="button"></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+
+</footer>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.navbar-default').stickUp();
+
+        });
+    });
+
+</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/classie.js"></script>
+<script src="js/uiMorphingButton_inflow.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+</body>
+
+</html>
+ 
